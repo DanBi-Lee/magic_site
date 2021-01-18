@@ -1,0 +1,55 @@
+:root {
+    --background-color :  #FFF5D2;
+    --black-color : #222;
+}
+
+@font-face {
+    font-family: 'CookieRunOTF-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    display: table;
+}
+
+html, body {
+    min-width: 320px;
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    color : var(--black-color);
+    font-family: 'CookieRun-Regular';
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+button {
+    font-weight: 400;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+button {
+    color: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}

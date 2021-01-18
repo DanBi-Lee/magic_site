@@ -1,0 +1,16 @@
+.numberList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    background-color: #F3E8FF;
+    border: 2px solid #996ACC;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.numberList > li {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
