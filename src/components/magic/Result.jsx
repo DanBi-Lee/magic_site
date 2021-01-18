@@ -1,6 +1,11 @@
 import React from 'react';
 
-function Result ({styles, number, setScreen}) {
+function Result ({styles, number, setNumber, setScreen}) {
+  const reset = () => {
+    setScreen(()=>0); 
+    setNumber(()=>0);
+  }
+
   return (
     <>
       <div className={styles.contents}>
@@ -10,7 +15,7 @@ function Result ({styles, number, setScreen}) {
           입니다.
         </p>
       </div>
-      <button className="button" onClick={()=>{setScreen(()=>0)}}>
+      <button className="button" onClick={reset}>
         다시하기 <i className="fas fa-redo-alt"></i>
       </button>
     </>

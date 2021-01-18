@@ -39,7 +39,7 @@ function Magic () {
         state.current = 'step';
         return <Step styles={styles} onClick={onClick} step={screen-1} number={number} setNumber={setNumber} state={state.current} />
       case screen_list[7] : 
-        return <Result styles={styles} onClick={onClick} number={number} setScreen={setScreen} />
+        return <Result styles={styles} onClick={onClick} number={number}  setNumber={setNumber} setScreen={setScreen} />
       default:
         throw Error('정의되지 않은 step');
     }
