@@ -1,10 +1,14 @@
 import React from 'react';
+import { BGM_magic, SE_result } from '../../js/sound';
 
-function Result ({styles, number, setNumber, setScreen}) {
+function Result ({styles, number, setNumber, setScreen, playButtonSE}) {
   const reset = () => {
     setScreen(()=>0); 
     setNumber(()=>0);
+    playButtonSE();
   }
+  BGM_magic.stop();
+  SE_result.play();
 
   return (
     <>
